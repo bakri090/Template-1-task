@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.logo{
+
+  display: inline;
+}
+.logo img {
+  width: 100px;
+  margin-top: 20px;
+}
+.links{
+  float: right;
+  margin-top: 30px;
+  display: inline;
+  margin-bottom: 15px;
+}
+.links ul li {
+  float: left;
+  margin: 0 15px;
+  display: inline;
+}
+.links a {
+  color: #19ab9c;
+  font-size: 20px;
+  
+}
+.links a:hover{
+  color: #555;
+}
+
+section#landing{
+  min-height: 400px;
+  align-items: center;
+}
+#landing {
+  position: relative;
+  background: url('../img/landing.jpg');
+}
+#landing div {
+  position: absolute;
+  left: 20%;
+  text-align: center;
+  top: 20%;
+}
+#landing h1 {
+  font-size: 55px;
+  color: #10cab7;
+  font-weight: bold;
+}
+
+#landing p {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+#services article{
+  float: left;
+  width: 33%;
+  text-align: center;
+  margin-top: 20px;
+  min-height: 300px;
+  background-color: #fff;
+}
+article h1 {
+  margin: 15px 0;
+}
+article img {
+  width: 100px;
+}
+#services article:nth-child(2){
+  margin-top: 30px;
+}
+footer {
+  text-align: right;
+  max-width: 400px;
+  position: relative;
+}
+footer p {
+  position: absolute;
+  left: 20%;
+  bottom: 3%;
+}
+.container .contact {
+  margin-top: 30px;
+  background-color: #555;
+  padding: 10px;
+  color: #fff;
+  min-height: 40%;
+  border-radius: 8px;
+}
+.contact div {
+  margin: 15px 0;
+}
+.contact div label{
+  padding: 10px;
+  float: left;
+  width: 20%;
+}
+
+.contact div input{
+  padding: 15px;
+}
+.contact h3 {
+  text-align: center;
+  font-size: 30px;
+  color: #10cab7;
+}
+.contact input {
+  width: 50%;
+}
+button {
+  text-align: center;
+  padding: 20px;
+  width: 30%;
+  margin-left: 30%;
+  border-radius: 8px;
+  background-color: #10cab7;
+  color: #fff;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #10cab77a;
+}
+
+@media (max-width: 768px) {
+  #services article {
+    width: 100%;
+  }
+  .contact div{
+    margin: 10px;
+  }
+  .contact div label{
+    padding: 10px;
+    float: none;
+    min-width: 20%;
+    margin: 0 20px;
+  }
+  .contact div input {
+    padding: 10px;
+  }
+  button {
+    width: 30%;
+    padding: 5px;
+  }
+  .contact {
+    min-height: 80vh;
+    background-color: #10cab7;
+  }
+}
